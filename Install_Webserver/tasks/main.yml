@@ -1,0 +1,15 @@
+---
+   - name: Installing Latest version of Apache
+     yum:
+        name: "{{ package }}" 
+        state: present
+
+   - name: Copy Sample File
+     template: src=index.html dest=/var/www/html
+
+   - name: Enable Apache on Boot
+     service:
+            name: "{{ package }}"
+            enabled: yes
+     notify:
+     - start apache
