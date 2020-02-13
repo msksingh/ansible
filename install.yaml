@@ -1,6 +1,7 @@
 ----
 - hosts: all
   tasks:
+<<<<<<< HEAD
     -name: Install httpd
 <<<<<<< HEAD
      apt:
@@ -14,3 +15,10 @@
        name: https
        state: present 
 >>>>>>> ansibletest
+=======
+     - name: Install httpd
+       yum:
+        name: httpd
+        state: present
+     
+>>>>>>> 7d6d612eb9ed4240496dde6c72f84a9a188db771
