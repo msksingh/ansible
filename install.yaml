@@ -2,3 +2,6 @@
 - hosts: all
   tasks:
     -name: Install httpd
+     apt:
+       name: python
+       state: present
