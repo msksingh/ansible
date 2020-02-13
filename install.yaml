@@ -2,3 +2,6 @@
 - hosts: all
   tasks:
     -name: Install httpd
+     yum:
+       name: tomcat
+       state: present
