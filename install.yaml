@@ -2,6 +2,15 @@
 - hosts: all
   tasks:
     -name: Install httpd
+<<<<<<< HEAD
      apt:
        name: python
        state: present
+=======
+     yum:
+       name: tomcat
+       state: present
+     yum: 
+       name: https
+       state: present 
+>>>>>>> ansibletest
